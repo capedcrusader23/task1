@@ -1,0 +1,91 @@
+<html>
+
+<head>
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+ <!-- jQuery library -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+ <!-- Latest compiled JavaScript -->
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+ <script
+         src="https://code.jquery.com/jquery-3.3.1.js"
+         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+         crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <style>
+
+  canvas{
+   position:absolute;
+   left: 0px;
+   right:0px;
+   z-index:-1;
+   top:0px;
+   bottom:0px;
+  }
+
+  #head{
+   position: relative;
+   left:100px;
+   width:1000px;
+   top:200px;
+  }
+  .text
+  {color:#F79F1F;font-family: 'Abril Fatface', cursive;font-size: 30px}
+
+
+
+ </style>
+</head>
+
+<body>
+
+<canvas></canvas>
+
+
+<div  id="head">
+ <div class="text">
+  <p>BANK:<%=info.BANK%></p>
+
+  <p>IFSC:<%=info.IFSC%></p>
+
+  <p>BRANCH:<%=info.BRANCH%></p>
+
+  <p>ADDRESS:<%=info.ADDRESS%></p>
+
+  <p>CONTACT:<%=info.CONTACT%></p>
+
+  <p>CITY:<%=info.CITY%></p>
+
+  <p>DISTRICT:<%=info.DISTRICT%></p>
+  <p>STATE:<%=info.STATE%></p>
+  <p>RTGS:<%=info.RTGS%></p>
+ </div>
+
+  <a href="/"><button class="btn btn-success">Check Another IFSC</button></a>
+
+</div>
+
+
+
+
+
+
+
+
+
+<script>
+
+    $(document).ready(function(){
+        $('body').fadeOut(1);
+        $('body').fadeIn(1000);
+
+    })
+
+</script>
+<script src="sciprt.js"></script>
+</body>
+</html>
